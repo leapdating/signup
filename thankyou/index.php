@@ -31,7 +31,7 @@ $from_email = "";
 $subject = "Contact from leap.dating";
 
 /* Site URL */
-$site_url = "http://leap.dating";
+$site_url = "leap.dating";
 
 /* Site Name */
 $site_name = "Leap";
@@ -40,7 +40,7 @@ $site_name = "Leap";
 Optional.  Enter the continue link to offer the user after the form is sent.  If you do not change this, your visitor will be given a continue link to your homepage.
 If you do change it, remove the "/" symbol below and replace with the name of the page to link to, eg: "mypage.htm" or "http://www.elsewhere.com/page.htm"
 */
-$continue = "/";
+$continue = "/index.html";
 
 /*
 Step 3: Save this file (/thankyou/index.php) and upload it together with your webpage containing the form to your webspace.  IMPORTANT - The file name is case sensitive!  You must save it exactly as it is named above!
@@ -102,7 +102,7 @@ function build_message($request_input){if(!isset($message_output)){$message_outp
 
 $message = build_message($_REQUEST);
 
-$message = $message . PHP_EOL.PHP_EOL."-- ".PHP_EOL."Thank you for using FormToEmail from http://FormToEmail.com";
+$message = $message . PHP_EOL.PHP_EOL."-- ".PHP_EOL."Thank you";
 
 $message = stripslashes($message);
 
