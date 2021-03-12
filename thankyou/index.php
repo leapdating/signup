@@ -40,7 +40,7 @@ $site_name = "Leap";
 Optional.  Enter the continue link to offer the user after the form is sent.  If you do not change this, your visitor will be given a continue link to your homepage.
 If you do change it, remove the "/" symbol below and replace with the name of the page to link to, eg: "mypage.htm" or "http://www.elsewhere.com/page.htm"
 */
-$continue = "/index.html";
+$continue = "index.html";
 
 /*
 Step 3: Save this file (/thankyou/index.php) and upload it together with your webpage containing the form to your webspace.  IMPORTANT - The file name is case sensitive!  You must save it exactly as it is named above!
