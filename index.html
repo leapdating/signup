@@ -78,7 +78,7 @@ input[type=submit]:hover {
 }
 </style>
 
-<div class=" w3-content w3-padding" id="contact us" style="max-width:800px">
+<!--div class=" w3-content w3-padding" id="contact us" style="max-width:800px">
 <h2 class="w3-center w3-text-black"><u>SIGN UP</u></h2>
 <form  action="thankyou/index.php" method="post">
 <div class="w3-row-padding" style="margin:0 16px 10px 16px">
@@ -86,8 +86,34 @@ input[type=submit]:hover {
 <div class=" w3-half"><u><input class="w3-input w3-border" name="Email" placeholder="Email Address" required="" type="text" /> </u></div>
 <button class="w3-button w3-white w3-section w3-right" type="submit" value="Send">SUBMIT</button>
 </form>
-</div>
+</div-->
+<h2>Basic Form</h2>
+<form action="emailer.php" method="get">
+	<label>Name</label><br />
+	<input name="Name" type="text" value="John Kueh" /><br />
+	<label>Email</label><br />
+	<input name="Email" type="email" value="me@yoongfook.com" /><br />
+	
+	<button type="submit">Submit</button>
+</form>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
+<script src="js/form-plugin.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#form").validate({
+		submitHandler: function(form) {
+    	$(form).ajaxSubmit(function(data){
+    		if(data = 'success') {
+    			$("#form").fadeOut();
+    			$("#form").after('<h4>Thank you for your interest. <br />We will get back to you soon</h4>');
+    		}
+    	});
+   }
+	});
+})
+</script>
 
 <!--div class="w3-center w3-content w3-padding" id="contact us" style="max-width:400px" >
 <table border="0" style="background:#ececec" cellspacing="10">
