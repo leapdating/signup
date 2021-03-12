@@ -2,7 +2,7 @@
 
 /* Settings
 ---------------------*/
-$email_to = 'leap.dating@.com'; // Email addresses to send data. Seperate email addresses with ','
+$email_to = 'leap.dating@gmail.com'; // Email addresses to send data. Seperate email addresses with ','
 $site_title = 'Leap Dating'; // Your website title
 $webmaster_name = "Andrew Howes"; // Your name
 
