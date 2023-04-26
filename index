@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coming Soon - New Dating App</title>
+	<style>
+		body {
+			background-color: black;
+			font-family: Arial, sans-serif;
+			color: white;
+			text-align: center;
+		}
+		h1 {
+			font-size: 4rem;
+			margin-top: 5rem;
+		}
+		h2 {
+			font-size: 2rem;
+			margin-top: 1rem;
+		}
+		.logo {
+			width: 10rem;
+			height: 10rem;
+			margin-top: 3rem;
+		}
+		.strike {
+			text-decoration: line-through;
+		}
+	</style>
+</head>
+<body>
+	<img src="company-logo.png" alt="Company Logo" class="logo">
+	<h1>Coming Soon</h1>
+	<h2><span style="font-size: 2.5rem;">Dating App</span><br>A new <span class="strike">game</span> for singles</h2>
+</body>
+</html>
